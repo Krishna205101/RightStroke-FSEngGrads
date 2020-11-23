@@ -1,0 +1,24 @@
+<div class="container">
+    <div>
+        <p>This is One Way Binding</p>
+        <p>Hi {{name}}</p> 
+    </div>
+   
+    <div>
+        <p>This is Two Way Binding</p>
+        <label>Username:</label>
+        <input [(ngModel)]="Firstname"/>
+    </div>
+    
+    
+    <div>
+        <p>This is Event Binding</p>
+        <button (click)="read(Firstname)">Submit</button>
+    </div>
+    
+    
+    <div>
+        <p>This is Property Binding</p>
+        <img [src]="url" alt="" widht="500" height="300">
+    </div>
+</div>
